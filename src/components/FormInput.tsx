@@ -27,6 +27,7 @@ const FormInput = ({
         className="form-control"
         {...extras}
       />
+      {errors && <div className="text-danger">{errors.message}</div>}
     </>
   );
 };
